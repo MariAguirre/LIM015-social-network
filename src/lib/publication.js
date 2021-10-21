@@ -82,7 +82,14 @@ export default () => {
           <button type="button" id='${doc.uid}' class="btnEdit" >Edit </button>
           <p type="text">0</p>
           </section>
-        </section>`;
+        </section>
+        <section id="commentSec"><section id="commentando">
+          <img class="userPhotoComment" src="${getCurrentUser().photo === null ? '../img/chica.jpg' : getCurrentUser().photo}" width= "25">
+          <form class="formComenta">
+            <input id="commentText-${doc.id}" class="comentario" placeholder="Escribe tu comentario..."></input>
+            <button type="button" id='comentarPost'>Comentar</button>
+
+          </section>`;
 
         // console.log(publicPost);
         // publicPost.innerHTML += readPost;
